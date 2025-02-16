@@ -18,7 +18,7 @@ const TodoForm = ({ setTodos }) => {
       completed: false,
     };
 
-    // för local storage
+
 
     setTodos((prevTodos) => {
       const updatedTodos = [...prevTodos, newTodo];
@@ -42,8 +42,6 @@ const TodoForm = ({ setTodos }) => {
   );
 };
 
-// jag hade mest problem med att inte få röda varningar pga props,
-// pga någon otrevlig typescript-inställning jag har- osäker på om detta är en rimlig lösning- men det tog bort varningarna iaf!
 
 TodoForm.propTypes = {
   setTodos: PropTypes.func.isRequired,
