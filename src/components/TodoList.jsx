@@ -49,7 +49,7 @@ const TodoList = ({ todos, setTodos }) => {
         ))}
       </ul>
      
-      {allCompleted && <div className="feedback">Alla uppgifter är klara! 🎉</div>}
+      {allCompleted && <div className="feedback">Du har inget som måste göras!</div>}
     </div>
   );
 };
